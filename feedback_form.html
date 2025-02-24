@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>User Feedback Form</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Feedback Form Section (Inside Article) -->
+    <article>
+        <section>
+            <form action="#" method="POST">
+                <!-- User Name -->
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" required maxlength="50"/><br>
+
+                <!-- E-mail -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required/><br>
+
+                <!-- Satisfaction Question -->
+                <p>Are you satisfied?</p>
+                <input type="radio" id="yes" name="Satisfied" value="yes" required>
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="Satisfied" value="no" required>
+                <label for="no">No</label><br>
+
+                <!-- Dropdown List -->
+                <label for="features">Select feature that you like from the dropdown list:</label>
+                <select name="features" id="features">
+                    <option value="feature-1">Feature 1</option>
+                    <option value="feature-2">Feature 2</option>
+                    <option value="feature-3">Feature 3</option>
+                </select><br>
+
+                <!-- Feedback Text -->
+                <label for="feedback">Feedback:</label>
+                <input type="text" id="feedback" name="feedback" required maxlength="255"/><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </article>
+
+    <!-- Embedded Video Tutorial Section -->
+    <section>
+        <h2>Video Tutorial: New Features</h2>
+        <video width="320" height="240" controls>
+            <source src="https://via.placeholder.com/150" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Embedded Audio Clip Section -->
+    <section>
+        <h2>System Update Sound</h2>
+        <audio controls>
+            <source src="https://via.placeholder.com/150" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 LaunchDarkly. All rights reserved.</p>
+    </footer>
+</body>
+</html>
