@@ -26,7 +26,7 @@ The form is wrapped within a `#feedback-form` container, which is styled with a 
 
 ## Installation & Usage
 1. Clone the repository or download the project files.
-2. Open `index.html` in a web browser to view the form.
+2. Open `feedback_form.html` in a web browser to view the form.
 3. Modify the CSS file (`styles.css`) to customize the appearance if needed.
 
 ## Responsive Adjustments
