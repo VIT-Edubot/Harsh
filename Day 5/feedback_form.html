@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="feedback.js"></script> <!-- JS loaded after DOM -->
+</head>
+<body class="background">
+    
+    <!-- Header Section -->
+    <header>
+        <h1>User Feedback Form</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Feedback Form Section -->
+    <article id="feedbackForm - container">
+        <section>
+            <form id="feedbackForm" method="POST">
+                
+                <!-- User Name -->
+                <label for="name">User Name:</label>
+                <input class="input-barr" type="text" id="name" name="name" required maxlength="50">
+                <span id="nameError" class="error-message"></span>
+
+                <!-- Email -->
+                <label for="email">E-mail:</label>
+                <input class="input-barr" type="email" id="email" name="email" required>
+                <span id="emailError" class="error-message"></span>
+
+                <!-- Satisfaction Question -->
+                <p>Are you satisfied?</p>
+                <input type="radio" id="satisfiedYes" name="satisfied" value="yes" required>
+                <label for="satisfiedYes">Yes</label>
+                <input type="radio" id="satisfiedNo" name="satisfied" value="no" required>
+                <label for="satisfiedNo">No</label>
+
+                <!-- Feature Ratings (Sliders) -->
+                <h3>Rate the Features (1 to 5)</h3>
+
+                <div class="rating-container">
+                    <label for="feature1">Feature 1:</label>
+                    <input type="range" id="feature1" class="rating-slider" name="feature1" min="1" max="5" value="3">
+                    <span id="feature1Value">3</span>
+                </div>
+
+                <div class="rating-container">
+                    <label for="feature2">Feature 2:</label>
+                    <input type="range" id="feature2" class="rating-slider" name="feature2" min="1" max="5" value="3">
+                    <span id="feature2Value">3</span>
+                </div>
+
+                <div class="rating-container">
+                    <label for="feature3">Feature 3:</label>
+                    <input type="range" id="feature3" class="rating-slider" name="feature3" min="1" max="5" value="3">
+                    <span id="feature3Value">3</span>
+                </div>
+
+                <!-- Dropdown List -->
+                <label for="features">Select a feature you like:</label>
+                <select name="features" id="features">
+                    <option value="feature-1">Feature 1</option>
+                    <option value="feature-2">Feature 2</option>
+                    <option value="feature-3">Feature 3</option>
+                </select>
+
+                <!-- Feedback Text -->
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required maxlength="255"></textarea>
+
+                <!-- Submit Button -->
+                <div class="btn-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </article>
+
+    <!-- Feedback Result -->
+    <div id="feedbackResult" style="display: none;"></div>
+
+    <!-- Embedded Video Tutorial -->
+    <section>
+        <h2>Video Tutorial: New Features</h2>
+        <video width="320" height="240" controls>
+            <source src="https://via.placeholder.com/150" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Embedded Audio Clip -->
+    <section>
+        <h2>System Update Sound</h2>
+        <audio controls>
+            <source src="https://via.placeholder.com/150" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 LaunchDarkly. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
