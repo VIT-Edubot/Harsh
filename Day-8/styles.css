@@ -1,0 +1,200 @@
+/* General Styling */
+body {
+    background-color: lightgrey;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Add Employee Button */
+#addEmployeeBtn {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#addEmployeeBtn:hover {
+    background-color: #218838;
+}
+
+/* Employee Form */
+#employeeForm {
+    display: none;
+    margin: 20px auto;
+    padding: 15px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#employeeForm input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#submitEmployee {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submitEmployee:hover {
+    background-color: #0056b3;
+}
+
+/* Employee List Styling */
+.employee-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    width: 300px;
+}
+#employeeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+/* Employee Card */
+.employee-card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 15px;
+    margin: 10px;
+    text-align: left;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.employee-card:hover {
+    transform: scale(1.05);
+    background-color: rgb(184, 214, 228);
+}
+
+/* Employee Info */
+.employee-info p {
+    margin: 5px 0;
+}
+
+/* Active & Inactive Status */
+.active {
+    color: green;
+    font-weight: bold;
+}
+
+.inactive {
+    color: red;
+    font-weight: bold;
+}
+
+/* Edit Form */
+.edit-form {
+    margin-top: 10px;
+}
+
+.edit-form input {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Status Toggle Button */
+.toggle-status {
+    background-color: #ffc107;
+}
+
+.toggle-status:hover {
+    background-color: #e0a800;
+}
+
+/* Edit Button */
+.edit {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.edit:hover {
+    background-color: #138496;
+}
+
+/* Delete Button */
+.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete:hover {
+    background-color: #c82333;
+}
+
+/* Sort, Filter, Map Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.sort, .map, .filter {
+    background-color: #6c757d;
+    color: white;
+}
+
+.sort:hover, .map:hover, .filter:hover {
+    background-color: #5a6268;
+}
+
+/* Hide Elements */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .employee-card {
+        width: 90%;
+    }
+}
