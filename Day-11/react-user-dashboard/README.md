@@ -1,19 +1,23 @@
-# Employee Dashboard with React
+# LaunchDarkly User Dashboard - useState Assignment
 
-## Overview
-This project implements an Employee Management System using React. It demonstrates the use of props and component composition.
+## Approach
 
-## File Structure
-- `App.jsx`: Renders the `EmployeeDashboard` component.
-- `EmployeeDashboard.jsx`: Holds the employee list and passes data to `EmployeeCard` as props.
-- `EmployeeCard.jsx`: Displays individual employee details.
-- `Header.jsx`: Displays the title of the dashboard.
+This dashboard uses React's `useState` to manage local component state:
+- **Name** (`name`): A string updated through a controlled input field.
+- **Status** (`isActive`): A boolean toggled via a button to show "Active"/"Inactive".
+- **Theme** (`theme`): A string `"light"` or `"dark"` saved to localStorage for persistence.
 
-## Key Concepts
-- **Props**: Data is passed from `EmployeeDashboard` to `EmployeeCard` using props.
-- **Component Composition**: Small components (`Header`, `EmployeeCard`) are composed to form the `EmployeeDashboard`.
-- **Reusability**: `EmployeeCard` is used multiple times by mapping through an employee list.
+## User Interactions
+
+- Changing the **name** updates the UI immediately.
+- Toggling **status** dynamically changes the text and shows an inactive message.
+- Toggling **theme** updates styles and stores the preference in `localStorage`.
 
 ## Challenges
-- Ensuring the `EmployeeCard` component was reusable and dynamically received data.
-- Managing layout using CSS to make it visually appealing.
+
+- Ensuring the theme,name and Active persisted correctly on reload required initializing state from `localStorage`.
+- Styling the theme dynamically required conditional classes and smooth transitions.
+
+## Outcome
+
+This project helped solidify understanding of `useState`, controlled components, and user interaction in React.
