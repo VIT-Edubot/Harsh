@@ -1,0 +1,39 @@
+/* Body styling */
+body {
+  
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+.homeli{
+  justify-content: center;
+}
+/* Navbar */
+nav {
+  background-color: #b4b499;
+  padding: 1rem 2rem;
+}
+
+/* Remove default ul styles and align horizontally */
+.nav-list {
+  list-style: none;
+  display: flex;              /* ← Makes items horizontal */
+  justify-content: center;    /* ← Center-aligns them */
+  gap: 2rem;                  /* ← Adds spacing between them */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Style links */
+.nav-list a {
+  color: #7d3232;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-list a:hover {
+  color: #ffcc00;
+}
