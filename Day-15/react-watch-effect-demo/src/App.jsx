@@ -4,13 +4,15 @@ function App() {
     <div className="flex flex-col min-h-screen">
       {/* Header */}
       <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
-        <div className="text-xl font-bold">LaunchDarkly</div>
-        <nav className="flex flex-col gap-5 sm:flex-row sm:gap-5 p-4">
-          <a href="#" className="hover:underline">Home</a>
-          <a href="#" className="hover:underline">About</a>
-          <a href="#" className="hover:underline">Contact</a>
-        </nav>
-      </header>
+  <div className="text-xl font-bold">LaunchDarkly</div>
+  <nav className="flex flex-row items-center gap-5">
+    <a href="#" className="hover:underline block">Home</a>
+    <a href="#" className="hover:underline block">About</a>
+    <a href="#" className="hover:underline block">Contact</a>
+  </nav>
+</header>
+
+
 
       {/* Main Content */}
       <main className="flex-grow p-6">
