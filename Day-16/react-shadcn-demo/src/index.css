@@ -1,0 +1,21 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dark\:your-custom-class {
+    @apply text-white bg-black;
+  }
+}
+body.dark .your-element {
+  @apply text-white bg-black;
+}
+@custom-media --dark-mode {
+  @media (prefers-color-scheme: dark) {
+    .your-class {
+      background-color: black;
+      color: white;
+    }
+  }
+}
